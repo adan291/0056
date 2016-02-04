@@ -150,17 +150,6 @@ public class Auction
         return noLote;
     }
     
-        /**
-         * Metodo que crea una lista con los lotes por los que no se ha pujado.
-         */
-        public ArrayList getUnsold() {
-            ArrayList noLote = new ArrayList<Lot>();        
-            for (Lot lot : lots){
-                if (lot.getHighestBid() == null){
-                    noLote.add(lot);
-                }
-            }        
-            return noLote;
-        }
+       
     }
 
